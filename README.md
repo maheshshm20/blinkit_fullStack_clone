@@ -18,10 +18,6 @@ This project is a full-stack clone of Blinkit, featuring a React frontend and a 
 ---
 
 ## 1. Clone the Repository
-
-```bash
-git clone https://github.com/maheshshm20/blinkit_fullStack_clone.git
-cd blinkit_fullStack_clone
 ```
 
 ---
