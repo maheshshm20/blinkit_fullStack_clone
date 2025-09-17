@@ -1,21 +1,54 @@
-# BlinkIt-Clone-Full-Stack-Ecommerce
-BlinkIt-Clone-Full-Stack-Ecommerce
+# BlinkIt-Clone Frontend (React)
 
-![Alt text](Thumnails.png?raw=true "Title")
+This repository contains the **frontend** for a Blinkit-style e-commerce platform, built with React and Vite and nodejs as well.  
+You can use this frontend with any backend of your choice by updating the API endpoints.
 
-Build a complete e-commerce platform that looks like Blinkit using the MERN stack! In this project, we will create an online shopping site with key features, including product uploads, an admin panel, and management for categories and subcategories. We will use access and refresh tokens to establish secure user authentication. You will also learn how to set up password recovery, OTP-based email verification, and secure authentication processes. This project is a great way to improve your skills in MongoDB, Express, React, and Node.js.
+## Features
 
-# Demo 
-![Alt text](Demo%201.gif?raw=true "demo1")
-![Alt text](Demo%202.gif?raw=true "demo2")
+- Modern UI inspired by Blinkit
+- Product browsing and search
+- Cart and checkout flow
+- User authentication (login/register/forgot password)
+- Admin panel for product/category management
+- Responsive design for mobile and desktop
 
-# Assets File
-Google Drive : https://drive.google.com/drive/folders/1llzO3ts3NJKrQ0A2XWZYaO-T0Qnyq6yO?usp=sharing
+## Getting Started
 
- <a href="https://www.linkedin.com/in/itsamitprajapati" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="amit prajapati"/>
- </a>
+### 1. Install Dependencies
 
- Youtube : Dynamic Coding with Amit
+```bash
+cd client
+npm install
+```
 
- 
+### 2. Configure API Endpoints
+
+Update the API base URL to point to your backend in [`client/src/common/SummaryApi.js`](client/src/common/SummaryApi.js):
+
+```js
+export const baseURL = import.meta.env.VITE_API_URL
+```
+
+Set `VITE_API_URL` in a `.env` file inside the `client` folder:
+
+```
+VITE_API_URL=https://your-backend-url.com
+```
+
+### 3. Run the Frontend
+
+```bash
+npm run dev
+```
+
+Open the app in your browser:
+
+```bash
+"$BROWSER" http://localhost:5173
+
+
+---
+**Note:**  
+This project is frontend-only. To use all features, connect it to a compatible backend (REST API).
+
+
